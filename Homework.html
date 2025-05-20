@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Homework
+        </title>
+    </head>
+    <body>
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["fage"].value;
+                if (x == "") {
+                    alert ("Age must be filled out.");
+                    return false;
+                }
+                else document.write("Age submitted");
+            }
+            </script>
+            <p> Enter your age and click submit </p>
+            <input id="id1" type="number" min="100" max="300" required>
+            <button onlick="myFunction()"> Submit </button>
+            <p id="result"> </p>
+    </body>
+</html>
